@@ -5,8 +5,6 @@ from model import LlamaChatModel
 def create_app() -> Flask:
     app = Flask(__name__, template_folder="templates", static_folder="static")
 
-    # In a real deployment this would load a fine‑tuned LLaMA model.
-    # For a beginner‑friendly setup we keep the wrapper simple and lightweight.
     model = LlamaChatModel()
 
     @app.route("/")
