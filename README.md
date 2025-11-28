@@ -62,24 +62,6 @@ Getting Started
    - In your browser, go to: `http://127.0.0.1:5000`
    - Type a message and press **Enter** or click **Send**.
 
-Notes on the Model
-------------------
 
-- By default, `LlamaChatModel` is configured to use:
-
-  - `TinyLlama/TinyLlama-1.1B-Chat-v1.0` (a small, LLaMA‑style chat model)  
-    via the Hugging Face `transformers` library.
-
-- If this model cannot be downloaded or loaded (for example, due to limited hardware), the project automatically switches to a rule‑based reply system:
-
-  - You still get a working chatbot.
-  - The overall architecture (Flask + model wrapper + JS client) stays the same, making it easy to plug in a fine‑tuned LLaMA model later.
-
-Resume‑Style Description
-------------------------
-
-- **Built an advanced conversational AI chatbot powered by a LLaMA‑style PyTorch model for domain‑specific, context‑aware responses.**
-- **Developed a Flask + JavaScript web interface enabling real‑time chat with short‑term conversation memory.**
-- **Optimized for low‑latency inference on a lightweight backend, making the system easy to deploy and scale.**
 
 
